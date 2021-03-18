@@ -19,7 +19,7 @@ Its website for Language Center provide courses for differnt languages.
 
 1. Provide a service for users who is seeking to learn new languages.
 2. Allows users to enroll courses .
-3. Allows users to buy orgnaizatin products available in store.
+3. Allows users to buy organization products available in store.
 
 ***
 
