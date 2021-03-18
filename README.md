@@ -11,7 +11,7 @@
 
 ## Project Brief
 
-Its website for Language Center provide courses for differnt languages.
+Its website for Language Center provide courses for different languages.
 
 ***
 
