@@ -1,59 +1,97 @@
 'use strict';
 
-// get form info
+// let forminfo = document.getElementsByClassName('form');
+let counterforallcources= 0 ;
+let EnglishCourse = 0 ;
+let SpanishCourse = 0 ;
+let GermanCourse = 0 ;
+let ArabicCourse = 0 ;
+let ItalianCourse = 0 ;
+let ChineseCourse = 0 ;
 
-const forminfo =document.getElementById('forminfo');
-// array that hold all student objects
-
-
-
-// constructor function
-
-let engstdnum = 0;
-function Courses (FirstName,LastName,Gender,EmailAddres,PhoneNumber,Course){
-  this.FirstName =FirstName;
-  this.LastName = LastName;
-  this.Gender = Gender;
-  this.EmailAddres =EmailAddres;
-  this.PhoneNumber =PhoneNumber;
-  this.studentnum = 0 ; // num for all courses
-  this.coursestudentnum =0; // num for each sourse
-  //this.Address =Address ;
-  this.Course =Course;
-  students.push(this); //global array
+let forminfo =document.getElementById('form-info');
+forminfo.addEventListener('submit' , getstudentinfo); // event handler
+//get ids  :
+ let countainer = document.getElementById('container');
+let stdollist  = document.getElementById('stdlist');
+ // constructor:
+function Courses (FirstName ,LastName , NativeLanguage, Gender ,EmailAddres ,PhoneNumber,Course){
+this.FirstName = FirstName;
+this.LastName = LastName ;
+this.NativeLanguage = NativeLanguage;
+this.Gender = Gender;
+this.EmailAddres = EmailAddres;
+this.PhoneNumber = PhoneNumber;
+this.Course = Course;
+Courses.std.push(this);
+localStorage.setItem('students' ,JSON.stringify(Courses.std));
 }
-let students =[];
+Courses.std = []; // global arr
 
-
-
-forminfo.addEventListener('submit', function (event){
+function getstudentinfo(event){ //event handler 
   event.preventDefault();
-  this.studentnum++;
+  // get values from the form :
+  
   let FirstName =event.target.FirstName.value;
   let LastName =event.target.LastName.value;
+  let NativeLanguage = event.target.NativeLanguage.value;
   let Gender =event.target.Gender.value;
-  let EmailAddres =event.target.EmailAddres.value;
+  let EmailAddres =event.target.EmailAddress.value;
   let PhoneNumber =event.target.PhoneNumber.value;
-  //let Address =document.getElementById('textarea').value; let Address =document.getElementById('textarea').value;
-  let Course =event.target.Course.value;
-  // new object for each student
-  new Courses(FirstName ,LastName ,Gender ,EmailAddres ,PhoneNumber,Course);
-
-  let student = JSON.stringify(students);
-  localStorage.setItem('students' ,student);
-  /////
-  //   let englishnum = document.getElementById('selectlist').selectedOptions[0].value;
-  if (this.Course === 'English'){
-    engstdnum++;
+  let Course = event.target.Course.value;
+  console.log(Course);
+  //// to get counter for each cource : 
+  if (Course === 'English'){
+      EnglishCourse+=1 ;
+  }else if (Course === 'German'){
+      GermanCourse+=1 ;
+  }else if (Course === 'Arabic'){
+     ArabicCourse+=1 ;
+  }else if (Course === 'Italian'){
+     ItalianCourse+=1 ;
+  }else if (Course === 'Chinese'){
+    ChineseCourse+=1 ;
+  }else if (Course === 'Spanish'){
+    SpanishCourse+=1 ;
+  }else{
+    console.log('there is no course with  this name');
   }
+  console.log(EnglishCourse);
+  ///////////////////
+  //////////////////////////////////////////////////
+  new Courses(FirstName ,LastName , NativeLanguage,Gender ,EmailAddres ,PhoneNumber,Course);
+} //  end of handler
 
-});
-console.log(this.Course);
-console.log(students);
 
-console.log(engstdnum);
+//FUNCTION GET INFO
+let studentsarray=[]; // all students array from local storage 
+function infofromthestorage (){
+  let data =localStorage.getItem('students');
+   if(data){
+   let objectsarr =JSON.parse(data);
+  for(let i = 0 ; i<objectsarr.length ; i++){ 
+   let newstudent = new Courses(objectsarr[i].FirstName , objectsarr[i].LastName , objectsarr[i].NativeLanguage, objectsarr[i].Gender,objectsarr[i].EmailAddres ,objectsarr[i].PhoneNumber,objectsarr[i].Course);
+   studentsarray.push(newstudent);
+     render();
+  }
+  //console.log(studentsarray);
+  
+}
+}
+infofromthestorage();
 
-// var getValue = document.getElementById('ddlViewBy').selectedOptions[0].value
-// let arr  = [ 'Select','English', 'Spanish' ,'German' ,'Arabic' ,'Italian' ,'Chinese'];
+
+//function render 
+function render (){
+  counterforallcources++;
+  //console.log(studentsarray);
+ for (let i= 0 ; i <Courses.std.length ; i++ ){
+ let newstd =document.createElement('li');
+ newstd.textContent = `Stduent name is ${Courses.std[i].FirstName} and student numbers ${counterforallcources}`;
+  stdollist.appendChild(newstd);//ol
+   }
+  countainer.appendChild(stdollist);//section
+}
+
 
 
