@@ -17,6 +17,8 @@ background-color:rgb(255, 255, 255,.8);
 width: 100%;
 position: fixed;
 box-shadow: black 0px 1px 4px;
+padding-bottom: 15px;
+padding-top: 15px;
 }
 
 

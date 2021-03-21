@@ -7,8 +7,11 @@
   font-family: 'Montserrat', sans-serif;
 }
 body{
-  background: #fec107;
+  background-image: linear-gradient(rgb(211, 203, 238), rgb(156, 212, 243));
   padding: 0 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+    
 }
 .wrapper{
   max-width: 500px;
@@ -17,13 +20,14 @@ body{
   margin: 20px auto;
   box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
   padding: 30px;
+  margin-top: 0px;
 }
 
 .wrapper .title{
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 25px;
-  color: #fec107;
+  color: rgb(156, 212, 243);
   text-transform: uppercase;
   text-align: center;
 }
@@ -96,7 +100,7 @@ body{
 .wrapper .form .inputfield .input:focus,
 .wrapper .form .inputfield .textarea:focus,
 .wrapper .form .inputfield .custom_select select:focus{
-  border: 1px solid #fec107;
+  border: 1px solid rgb(156, 212, 243);
 }
 
 .wrapper .form .inputfield p{
@@ -119,7 +123,7 @@ body{
 .wrapper .form .inputfield .check .checkmark{
   width: 15px;
   height: 15px;
-  border: 1px solid #fec107;
+  border: 1px solid #04aa28;
   display: block;
   position: relative;
 }
@@ -136,7 +140,7 @@ body{
   display: none;
 }
 .wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark{
-  background: #fec107;
+  background: #2ca828;
 }
 
 .wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before{
@@ -148,7 +152,7 @@ body{
    padding: 8px 10px;
   font-size: 15px; 
   border: 0px;
-  background:  #fec107;
+  background:  #25bb2d;
   color: #fff;
   cursor: pointer;
   border-radius: 3px;
@@ -156,7 +160,7 @@ body{
 }
 
 .wrapper .form .inputfield .btn:hover{
-  background: #ffd658;
+  background: #00520e;
 }
 
 .wrapper .form .inputfield:last-child{
@@ -174,4 +178,67 @@ body{
   .wrapper .form .inputfield.terms{
     flex-direction: row;
   }
+}
+
+header{
+  background-color:rgb(255, 255, 255,.8);
+  width: 100%;
+  position: fixed;
+  box-shadow: black 0px 1px 4px;
+ 
+  
+  
+  }
+
+  nav{
+    margin-left: 450px;
+}
+
+.navli{
+    display: inline-flex;
+    margin-left: 25px;
+    text-decoration: none;
+    color: rgb(145, 145, 145);
+    font-size: 20px;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-top: 10px;
+    
+
+}
+
+.navli :hover{
+    
+    padding-bottom: 2px;
+    color:rgb(255, 255, 255) ;
+    background-color: rgb(40, 187, 255);
+    border-radius: 5px;
+    
+    
+}
+
+a{
+    text-decoration: none;
+    color: rgb(145, 145, 145);
+}
+
+.logo{
+    float: left;
+    margin-left: 200px;
+    font-size: 25px;
+    color :rgb(40, 187, 255);
+    margin-top: 0px;
+}
+
+
+.logo h2{
+    margin-bottom: 0%;
+    font-family: 'Berkshire Swash', cursive;
+  
+}
+.logo h6{
+    margin-top: 0%;
+    color: rgb(145, 145, 145);
+    font-family: 'Redressed', cursive;
+    margin-left: 4px;
+    font-size: 10px;
 }
