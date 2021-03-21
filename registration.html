@@ -4,89 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="./css/registration.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <title>Registration Form</title>
 </head>
 <body>
 
     <header>
-       
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repudiandae in quis, exercitationem praesentium at officiis vel voluptates quae numquam temporibus, illo recusandae molestias accusantium voluptatem officia nam necessitatibus blanditiis.
+         
+         </p>
     </header>
   <main> 
-
-
-
 <div class="wrapper">
     <div class="title">
       Registration Form
     </div>
-
-    <div class="form">
-
-        <form action="" id="forminfo">
-
+    <!-- form start -->
+    <form class="form" id="form-info">
+       <div class="inputfield">
           <label>First Name</label>
-          <input type="text" class="input" placeholder="Enter Your First Name " name="FirstName">
-     
-      
+          <input type="text" class="input" name="FirstName">
+       </div>  
+        <div class="inputfield">
           <label>Last Name</label>
-          <input type="text" class="input" placeholder="Enter Your Last Name " name="LastName">
- 
-               
+          <input type="text" class="input" name="LastName">
+       </div>  
+       <div class="inputfield">
+          <label>Native Language</label>
+          <input type="text" class="input" name="NativeLanguage">
+       </div>  
+
+        <div class="inputfield">
           <label>Gender</label>
+          <div class="custom_select">
             <select name="Gender">
               <option value="">Select</option>
               <option value="male">Male</option>
               <option value="female">Female</option>
-             </select>
-      
-
-
+            </select>
+          </div>
+       </div> 
+        <div class="inputfield">
           <label>Email Address</label>
-          <input type="text" class="input" placeholder="Enter Your Email " name="EmailAddres">
-
-  
+          <input type="text" class="input" name="EmailAddress">
+       </div> 
+      <div class="inputfield">
           <label>Phone Number</label>
-          <input type="text" class="input" placeholder="Enter Your Phone Number"  name="PhoneNumber">
-      
-   
+          <input type="text" class="input" name="PhoneNumber">
+       </div> 
+       <!-- courses -->
+       <!-- courses -->
+      <div class="inputfield">
           <label>Address</label>
-          <textarea class="textarea" id="textarea"></textarea placeholder="Enter Your Address " name="Address">
-     
-           
+          <textarea class="textarea" name="Address"></textarea>
+       </div> 
+       <!-- add course field  -->
+        
+        <div class="inputfield">
           <label>Course</label>
-            <select name="Course" id="selectlist">
+          <div class="custom_select">
+            <select name="Course">
               <option value="">Select</option>
-              <option value="English">English</option>
-              <option value="Spanish">Spanish</option>
-              <option value="German">German</option>
-              <option value="Arabic">Arabic</option>
-              <option value="Italian">Italian</option>
-              <option value="Chinese">Chinese</option>
-              </select> 
-   
-          <!-- <label>Course</label>
-            <select name="Course" >
-              <option value="">Select</option>
-              <option value="English">English</option>
-              <option value="Spanish">Spanish</option>
-              <option value="German">German</option>
-              <option value="Arabic">Arabic</option>
-              <option value="Italian">Italian</option>
-              <option value="Chinese">Chinese</option>
-            </select> -->
-   
-        <input type="submit" value="Register" name="submit" id="submit">
-       </form>
-    </div>
+              <option value="English">EnglishCourse</option>
+              <option value="Spanish">SpanishCourse</option>
+              <option value="German">GermanCourse</option>
+              <option value="Arabic">ArabicCourse</option>
+              <option value="Italian">ItalianCourse</option>
+              <option value="Chinese">ChineseCourse</option>
+            </select>
+          </div>
+        </div>
+       <!-- end of course field  -->
+      <div class="inputfield">
+        <input type="submit" value="Register" class="btn" id="submit">
+      </div>
+    </form>
     <!-- end of the class form -->
 </div>
 <!-- end of container  -->
+  
+ <section id="container">
+   <h5>students list</h5>
+   <ol id="stdlist">
+   </ol>
+
+ </section>
 </main> 
 
 <footer>
-
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet distinctio optio eveniet quia nostrum suscipit iusto, tenetur laboriosam! Provident, quaerat maiores. Veniam ea magnam amet labore consectetur quis quasi possimus tempore, officia recusandae dignissimos placeat reiciendis perspiciatis. Facilis perspiciatis et similique, eius sunt quasi iure doloribus quos harum consequuntur modi ipsum! Amet impedit omnis magnam in aperiam id nesciunt ullam quae recusandae, tempora .
 </footer>
 
 <script src="./js/registration.js"></script>
