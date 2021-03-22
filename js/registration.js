@@ -1,13 +1,22 @@
 'use strict';
 
-// let forminfo = document.getElementsByClassName('form');
-let counterforallcources= 0 ;
-let EnglishCourse = 0 ;
-let SpanishCourse = 0 ;
-let GermanCourse = 0 ;
-let ArabicCourse = 0 ;
-let ItalianCourse = 0 ;
-let ChineseCourse = 0 ;
+// // let forminfo = document.getElementsByClassName('form');
+let EnglishCourse = parseInt(localStorage.getItem('EnglishCourse')) || 0 ;
+let DutchCourse =parseInt(localStorage.getItem('DutchCourse')) || 0 ;
+let GermanCourse = parseInt(localStorage.getItem('GermanCourse')) || 0 ;
+let ArabicCourse = parseInt(localStorage.getItem('ArabicCourse')) || 0 ;
+let ItalianCourse = parseInt(localStorage.getItem('ItalianCourse')) || 0 ;
+let KoreanCourse = parseInt(localStorage.getItem('KoreanCourse')) || 0 ;
+let TurkishCourse = parseInt(localStorage.getItem('TurkishCourse')) || 0 ;
+
+
+localStorage.setItem('EnglishCourse', EnglishCourse);
+localStorage.setItem('DutchCourse', DutchCourse);
+localStorage.setItem('GermanCourse', GermanCourse);
+localStorage.setItem('ArabicCourse', ArabicCourse);
+localStorage.setItem('ItalianCourse', ItalianCourse);
+localStorage.setItem('KoreanCourse', KoreanCourse);
+localStorage.setItem('TurkishCourse', TurkishCourse);
 
 let forminfo =document.getElementById('form-info');
 // event handler
@@ -23,13 +32,13 @@ function Courses (FirstName ,LastName , NativeLanguage, Gender ,EmailAddres ,Pho
   this.EmailAddres = EmailAddres;
   this.PhoneNumber = PhoneNumber;
   this.Course = Course;
-  counterforallcources++ ;
+  // counterforallcources++ ;
   Courses.std.push(this);
   localStorage.setItem('students' ,JSON.stringify(Courses.std));
 }
 Courses.std = []; // global arr
 console.log(Courses.std);
-function getstudentinfo(event){ //event handler 
+function getstudentinfo(event){ //event handler
   event.preventDefault();
   // get values from the form :
 
@@ -47,62 +56,36 @@ function getstudentinfo(event){ //event handler
 
   if (Course === 'English'){
     EnglishCourse+=1 ;
+    localStorage.setItem('EnglishCourse', EnglishCourse);
   }else if (Course === 'German'){
     GermanCourse+=1 ;
+    localStorage.setItem('GermanCourse', GermanCourse);
   }else if (Course === 'Arabic'){
     ArabicCourse+=1 ;
+    localStorage.setItem('ArabicCourse', ArabicCourse);
   }else if (Course === 'Italian'){
     ItalianCourse+=1 ;
-  }else if (Course === 'Chinese'){
-    ChineseCourse+=1 ;
-  }else if (Course === 'Spanish'){
-    SpanishCourse+=1 ;
+    localStorage.setItem('ItalianCourse', ItalianCourse);
+  }else if (Course === 'Korean'){
+    KoreanCourse+=1 ;
+    localStorage.setItem('KoreanCourse', KoreanCourse);
+  }else if (Course === 'Turkish'){
+    TurkishCourse+=1 ;
+    localStorage.setItem('TurkishCourse', TurkishCourse);
+  }else if (Course === 'Dutch'){
+    DutchCourse+=1 ;
+    localStorage.setItem('DutchCourse', DutchCourse);
   }else{
     console.log('there is no course with  this name');
   }
-  console.log(EnglishCourse);
-  console.log(GermanCourse);
-  console.log(ArabicCourse);
-  console.log(ItalianCourse);
-  console.log(ChineseCourse);
-  console.log(SpanishCourse);
-  // counterforallcources ++;
-  console.log(counterforallcources);
-  ///////////////////
-  //////////////////////////////////////////////////
-  // new Courses(FirstName ,LastName , NativeLanguage,Gender ,EmailAddres ,PhoneNumber,Course);
+
   let newstd=document.createElement('li');
   newstd.textContent = `Stduent name is ${FirstName} ${LastName}  and student number is ${Courses.std.length}`;
   stdollist.appendChild(newstd);//ol
-} //  end of handler
+}
 
-
-//FUNCTION GET INFO
-// let studentsarray=[]; // all students array from local storage
-// function infofromthestorage (){
-//   let data =localStorage.getItem('students');
-
-//   if(data){
-//     let objectsarr =JSON.parse(data);
-// for(let i = 0 ; i<objectsarr.length ; i++){
-//   let newstudent = new Courses(objectsarr[i].FirstName , objectsarr[i].LastName , objectsarr[i].NativeLanguage, objectsarr[i].Gender,objectsarr[i].EmailAddres ,objectsarr[i].PhoneNumber,objectsarr[i].Course);
-//   studentsarray.push(newstudent);
-//   render();
-
-// }
-//     console.log(studentsarray);
-
-//   }
-// }
-// infofromthestorage();
-
-
-//function render
 function render (){
 
-
-  // counterforallcources++;
-  //console.log(studentsarray);
   let renderCnt=1;
   for (let i= 0 ; i <Courses.std.length ; i++ ){
     console.log(Courses.std);
