@@ -115,3 +115,5 @@ function getdata(){
 forminfo.addEventListener('submit' , getstudentinfo);
 getdata();
 render ();
+
+
