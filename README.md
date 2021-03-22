@@ -51,6 +51,12 @@ if there is no any conflicts he/she will merge with the main branch.
 
 <img align="center" src="https://www.i-diom.at/wp-content/uploads/2017/05/a-different-language-is-a-different-vision-of-life-fellini.jpg">
 
+## wireframe
+
+<img align="center" src="https://i.imgur.com/8snz4xJ.jpg">
+
+
+
 
 
 
