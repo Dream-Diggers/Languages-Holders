@@ -9,7 +9,8 @@
 body{
     /* background-color: rgb(211, 203, 238);
     background-image: linear-gradient( rgb(156, 212, 243)); */
-    background-image: linear-gradient(rgb(211, 203, 238), rgb(156, 212, 243));
+    /* background-image: linear-gradient(rgb(211, 203, 238), rgb(156, 212, 243)); */
+    background-color: #fff;
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 0px;
