@@ -1,17 +1,92 @@
 
-body{
-    background-color: rgb(255, 255, 255);
+body{ 
+    /* background-color: rgb(211, 203, 238);
+    background-image: linear-gradient( rgb(156, 212, 243)); */
+    background-color: #fff;
+
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px; 
+ } 
+    
+
+header{
+background-color:rgb(255, 255, 255);
+width: 100%;
+/* position: fixed; */
+box-shadow: black 0px 1px 4px;
+/* padding-bottom: 15px; */
+/* padding-top: 15px; */
+margin-top: -15px;
+margin-bottom: 2px;
+}
+
+.searchicon{
+  margin-left: -350px;
+  margin-top: -25px;
+
+}
+
+.smallicon{
+  margin-left: 750px;
+  margin-top: -25px;
+}
+
+.searchbox{
+  margin-left: -325px;
+  margin-top: -23px;
+
+}
+
+nav{
+    margin-left: 400px;
+    
+    margin-top: 0px;
+    padding-bottom: 10px;
+}
+
+.navli{
+    display: inline-flex;
+    margin-left: 25px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    /* background-color: #ffffff; */
+    font-size: 20px;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-top: 10px;
+    padding: 2px;
+    
+
+}
+
+.navli :hover{
+    
+    /* padding-bottom: 2px; */
+    color:rgb(255, 255, 255) ;
+    background-color: #7a0315;
+    border-radius: 5px;
+    
+     
+    
+}
+
+a{
+    text-decoration: none;
+    color: rgb(31, 14, 14);
 }
 
 .admin h1{
-    color: rgb(30, 59, 0);
+    color: #7a0315;
     font-family: 'Barlow Condensed', sans-serif;
     margin-left: 500px;
+    margin-top: 50px;
+    font-size: 55px;
+    font-weight: bolder;
 
 }
 
 .container h5{
-    color: rgb(30, 59, 0);
+    color: #7a0315;
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 30px;
     font-weight: bold;
@@ -26,7 +101,7 @@ body{
 }
 
 .container ol li{
-    background-color: rgb(30, 59, 0);
+    background-color: #7a0315;
     font-family: 'Barlow Condensed', sans-serif;
     list-style-type: none;
     margin-right: 850px;
