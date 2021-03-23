@@ -26,7 +26,7 @@ numberOfApplicant.appendChild(viewNumberOfApplicant);
 let numberofArabicCourse=document.getElementById('ArabicCourse');
 let viewNumberOfArabicStudens=document.createElement('p');
 
-viewNumberOfArabicStudens.textContent=arabicStudents;
+viewNumberOfArabicStudens.textContent='Enrolled: '+arabicStudents+'+';
 numberofArabicCourse.appendChild(viewNumberOfArabicStudens);
 
 
@@ -34,42 +34,42 @@ numberofArabicCourse.appendChild(viewNumberOfArabicStudens);
 let numberofEnglishCourse=document.getElementById('englishCourse');
 let viewNumberOfEnglishStudens=document.createElement('p');
 
-viewNumberOfEnglishStudens.textContent=englishStudents;
+viewNumberOfEnglishStudens.textContent='Enrolled: '+englishStudents+'+';
 numberofEnglishCourse.appendChild(viewNumberOfEnglishStudens);
 
 ///APPENED THE NUMBER OF STUDENTS ENROLL IN DUTCH COURSE.
 let numberofDutchCourse=document.getElementById('dutchCourse');
 let viewNumberOfDutchStudens=document.createElement('p');
 
-viewNumberOfDutchStudens.textContent=dutchStudents;
+viewNumberOfDutchStudens.textContent='Enrolled: '+dutchStudents+'+';
 numberofDutchCourse.appendChild(viewNumberOfDutchStudens);
 
 /////APPENED THE NUMBER OF STUDENTS ENROLL IN GERMANY COURSE.
 let numberofGermanyCourse=document.getElementById('germanyCourse');
 let viewNumberOfGermanyStudens=document.createElement('p');
 
-viewNumberOfGermanyStudens.textContent=germanyStudents;
+viewNumberOfGermanyStudens.textContent='Enrolled: '+germanyStudents+'+';
 numberofGermanyCourse.appendChild(viewNumberOfGermanyStudens);
 
 /////APPENED THE NUMBER OF STUDENTS ENROLL IN KOREAN COURSE.
 let numberofItalianCourse=document.getElementById('italianCourse');
 let viewNumberOfItalianStudents=document.createElement('p');
 
-viewNumberOfItalianStudents.textContent=italianStudents;
+viewNumberOfItalianStudents.textContent='Enrolled: '+italianStudents+'+';
 numberofItalianCourse.appendChild(viewNumberOfItalianStudents);
 
 /////APPENED THE NUMBER OF STUDENTS ENROLL IN TURKISH COURSE.
 let numberofKoreanCourse=document.getElementById('koreanCourse');
 let viewNumberOfKoreanStudents=document.createElement('p');
 
-viewNumberOfKoreanStudents.textContent=koreanStudents;
+viewNumberOfKoreanStudents.textContent='Enrolled: '+koreanStudents+'+';
 numberofKoreanCourse.appendChild(viewNumberOfKoreanStudents);
 
 /////APPENED THE NUMBER OF STUDENTS ENROLL IN ITALIAN COURSE.
 let numberofTurkishCourse=document.getElementById('turkishCourse');
 let viewNumberOfTurkishStudents=document.createElement('p');
 
-viewNumberOfTurkishStudents.textContent=turkishStudents;
+viewNumberOfTurkishStudents.textContent='Enrolled: '+turkishStudents+'+';
 numberofTurkishCourse.appendChild(viewNumberOfTurkishStudents);
 
 

@@ -291,8 +291,6 @@ a{
 .langimg{
     width: 100%;
     margin-top: 0px;
-    /* position: relative; */
-    height: ;
     
 }
 
@@ -389,7 +387,7 @@ body{
   height: 400px;
   margin: 5px;
   margin-bottom: 50px;
-  background-color: rgb(255, 255, 255,0.4);
+  background-color: rgba(146, 111, 111, 0.4);
   border-radius: 25px;
   /* box-shadow: 0 0 10px 2px rgb(0, 0,0, 0.4); */
   /* padding: 20px; */
@@ -416,55 +414,19 @@ body{
 }
 .course1 .firstRow img{
   border-radius: 25px;
+  width: 350px; height: 200px;
 }
-#ArabicCourse {
-  position: absolute;
-  background: rgba(78, 3, 3, 0.5); 
-  color: #f1f1f1; 
-  width: 350px;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 20px;
-  padding: 50px;
-  text-align: center;
-}
-#englishCourse{
-  position: absolute;
-  background: rgba(78, 3, 3, 0.5); 
-  color: #f1f1f1; 
-  width: 350px;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 20px;
-  padding: 50px;
-  text-align: center;
-}
-#turkishCourse{
-  position: absolute;
-  background: rgba(78, 3, 3, 0.5); 
-  color: #f1f1f1; 
-  width: 350px;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 20px;
-  padding: 50px;
-  text-align: center;
-}
-.firstRow:hover #ArabicCourse {
-  opacity: 4;
-}
-.firstRow:hover #englishCourse{
-  opacity: 4;
 
+.course1 .firstRow .views,a {
+  display:inline-flex;
+  padding-left: 20px;
 }
-.firstRow:hover #turkishCourse {
-  opacity: 4;
+.course1 .firstRow .price{
+  margin-top: 90px; 
+  color: rgb(194, 194, 18);
+}
 
-}
-/* second slides */
+/* second Row*/
 
 .course2{
   /* display:table; */
@@ -480,8 +442,9 @@ body{
   height: 400px;
   margin: 5px;
   margin-bottom: 50px;
-  background-color: rgb(255, 255, 255,0.4);
-  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.068);
+  /* border-radius: 25px; */
+  border: #7C0516 1px solid;
   /* box-shadow: 0 0 10px 2px rgb(0, 0,0, 0.4); */
   /* padding: 20px; */
   /* line-height: 80px; */
@@ -490,7 +453,7 @@ body{
 }
 .course2 .seconRow:hover{
   box-shadow: 0 0 10px 2px rgb(0, 0,0, 0.4);
-  border-radius: 25px;
+  /* border-radius: 25px; */
 
 }
 .course2 .seconRow p{
@@ -506,65 +469,18 @@ body{
  
 }
 .course2 .seconRow img{
-  border-radius: 25px;
-}
-#dutchCourse{
-  position: absolute;
-  background: rgba(78, 3, 3, 0.5); 
-  color: #f1f1f1; 
-  width: 320px;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 20px;
-  padding: 50px;
-  text-align: center;
-}
-#koreanCourse{
-  position: absolute;
-  background: rgba(78, 3, 3, 0.5); 
-  color: #f1f1f1; 
-  width: 320px;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 20px;
-  padding: 50px;
-  text-align: center;
-}#italianCourse{
-  position: absolute;
-  background: rgba(78, 3, 3, 0.5); 
-  color: #f1f1f1; 
-  width: 320px;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 20px;
-  padding: 50px;
-  text-align: center;
-}#germanyCourse{
-  position: absolute;
-  background: rgba(78, 3, 3, 0.5); 
-  color: #f1f1f1; 
-  width: 320px;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 20px;
-  padding: 50px;
-  text-align: center;
-}
-.seconRow:hover #koreanCourse{
-  opacity: 4;
-}.seconRow:hover #dutchCourse{
-  opacity: 4;
-}.seconRow:hover #italianCourse{
-  opacity: 4;
-}
-.seconRow:hover #germanyCourse{
-  opacity: 4;
-}
+  /* border-radius: 25px; */
+  width: 318px; height: 200px;
 
+}
+.course2 .seconRow .views,a {
+  display:inline-flex;
+  padding-left: 20px;
+}
+.course2 .seconRow .price{
+  margin-top: 90px; 
+  color: rgb(194, 194, 18);
+}
 
 
 /*shop section*/
