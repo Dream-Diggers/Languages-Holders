@@ -78,20 +78,22 @@ a{
 .admin h1{
     color: #7a0315;
     font-family: 'Barlow Condensed', sans-serif;
-    margin-left: 500px;
-    margin-top: 50px;
-    font-size: 55px;
-    font-weight: bolder;
+    margin: 30px 0 0 550px;
+    font-size: 80px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 150px;
 
 }
 
 .container h5{
     color: #7a0315;
     font-family: 'Barlow Condensed', sans-serif;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
-    margin-top: 100px;
-    margin-left: 150px;
+    margin-top: 110px;
+    margin-left: 250px;
+    margin-bottom: 5px;
 }
 
 .container ol{
@@ -120,8 +122,10 @@ a{
 }
 
 .card-body h2 {
-
-    margin-left: 120px;
+    font-size: 40px;
+    color: #7a0315;
+    margin-left: 150px;
+    margin-bottom: 20px;
 }
 
 .sectio{
