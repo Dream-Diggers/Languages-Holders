@@ -14,12 +14,12 @@ body{
  align-items: center;
  flex-direction: column;
  background-color: #151820;
- height:1200px;
+ height:400px;
  /*  */
 
 }
 .text-container h1{
-    color: rgba(255, 0, 0, 0.822);
+    color: rgba(129, 0, 0, 0.822);
     font-size: 150px;
     font-weight: 900;
     text-align: center;
@@ -51,7 +51,7 @@ body{
     color: #fff;
     font-size: 45px;
     text-align: center;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     line-height: 75px;
 }
 .text-container .animated-text h2:nth-child(1){
@@ -96,9 +96,18 @@ body{
  /* section 222222222222222222222222/////////////////////////////////////////////*/
 
 /*  his css style */
+.container-2{
+ width: 100%;
+ background-color:  #151820;
+
+}
+.allimgs{
+
+ display: inline-flex;
+}
 .middle{
-  margin-top: 250px;
-  
+  margin-top: 300px;
+  margin-left: 50px;
   transform: translate(-50%,-50%);
 }
 .card{
@@ -113,6 +122,7 @@ body{
   backface-visibility: hidden;
   position: absolute;
   transition: transform .6s linear;
+  left: 37.5%;
 }
 .front img{
   height: 100%;
@@ -128,6 +138,8 @@ body{
   color: #2c3e50;
   text-align: center;
   width: 100%;
+  margin-left: 175px;
+  margin-top: 220px;
 }
 .sm{
   margin: 20px 0;
@@ -152,6 +164,10 @@ body{
 }
 .card:hover > .back{
   transform: perspective(600px) rotateY(0deg);
+}
+.membersimages{
+  width: 340px;
+  height: 480px;
 }
 
 
