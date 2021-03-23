@@ -79,7 +79,7 @@ function render (){
   for (let i= 0 ; i <newCourList.length ; i++ ){
     console.log(newCourList);
     let newstd =document.createElement('li');
-    newstd.textContent = `Stduent name is ${newCourList[i].FirstName} ${newCourList[i].LastName}  and student number is ${renderCnt}`;
+    newstd.textContent = `Stduent name is ${newCourList[i].FirstName} ${newCourList[i].LastName} student number is ${renderCnt} and course name is ${newCourList[i].Course}`;
     stdollist.appendChild(newstd);//ol
     renderCnt++;
   }
