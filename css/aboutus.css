@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(73, 73, 73);
+}
+.main-section{
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ background-color: #151820;
+ height:1200px;
+ /*  */
+
+}
+.text-container h1{
+    color: rgba(255, 0, 0, 0.822);
+    font-size: 150px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 80px;
+    margin-top: 50px;
+}
+.text-container h1 span {
+    font-size: 80px;
+    text-transform: uppercase;
+    letter-spacing: 3px ;
+    
+}
+
+.text-container .animated-text{
+    position: relative;
+    background: #7C0516;
+    margin-top: 15px;
+    height: 75px;
+    box-shadow: 0 0 10px #7C0516,
+    0 0 120px #7C0516;
+    overflow: hidden;     
+}
+.text-container .animated-text:before{
+    content: '';
+    background: rgba(255,255,255,0.1);
+    transform: skew(25deg) translateX(-20px);    
+}
+.text-container .animated-text h2{
+    color: #fff;
+    font-size: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 75px;
+}
+.text-container .animated-text h2:nth-child(1){
+   
+    animation: text-move 12s infinite;
+}
+/*  how to control the text moving: */
+@keyframes text-move{
+	0%{
+		margin-top: 0;
+	}
+	12.5%{
+		margin-top: -75px;
+	}
+	25%{
+		margin-top: -150px;
+	}
+	37.5%{
+		margin-top: -225px;
+	}
+	50%{
+		margin-top: -300px;
+	}
+	62.5%{
+		margin-top: -225px;
+	}
+	75%{
+		margin-top: -150px;
+	}
+	87.5%{
+		margin-top: -75px;
+	}
+	100%{
+		margin-top: 0;
+	}
+}
+
+/* to add  the reflect to the style */
+.text-container{
+	-webkit-box-reflect: inherit 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
+}
+ /* section 222222222222222222222222/////////////////////////////////////////////*/
+
+/*  his css style */
+.middle{
+  margin-top: 250px;
+  
+  transform: translate(-50%,-50%);
+}
+.card{
+  cursor: pointer;
+  width: 340px;
+  height: 480px;
+}
+.front,.back{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform .6s linear;
+}
+.front img{
+  height: 100%;
+}
+.front{
+  transform: perspective(600px) rotateY(0deg);
+}
+.back{
+  background: #f1f1f1;
+  transform: perspective(600px) rotateY(180deg);
+}
+.back-content{
+  color: #2c3e50;
+  text-align: center;
+  width: 100%;
+}
+.sm{
+  margin: 20px 0;
+}
+.sm a{
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  color: #2c3e50;
+  font-size: 18px;
+  transition: 0.4s;
+  border-radius: 50%
+}
+.sm a:hover{
+  background: #2c3e50;
+  color: white;
+}
+.card:hover > .front{
+  transform: perspective(600px) rotateY(-180deg);
+}
+.card:hover > .back{
+  transform: perspective(600px) rotateY(0deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
