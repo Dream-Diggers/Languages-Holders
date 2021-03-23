@@ -524,6 +524,15 @@ body{
 
 }
 
+.shopNow{
+  margin-left: 590px;
+  text-align: center;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 30px;
+  color: #7C0516;
+}
+
+
 footer{
     background-color: #7C0516;
     width:100%;
@@ -534,7 +543,7 @@ footer{
     padding-top: 10px;
     /* margin-left: -5px; */
     /* margin-bottom: -30px; */
-    margin-top: 800px;
+    margin-top: 300px;
     padding-right: 15px;
     font-family: 'Barlow Condensed', sans-serif;
     text-align: center;
