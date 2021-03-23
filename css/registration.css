@@ -20,7 +20,7 @@ body{
   margin: 20px auto;
   box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
   padding: 30px;
-  margin-top: 0px;
+  margin-top: 100px;
 }
 
 .wrapper .title{
@@ -183,7 +183,7 @@ body{
 header{
   background-color:rgb(255, 255, 255,.8);
   width: 100%;
-  position: fixed;
+  /* position: fixed; */
   box-shadow: black 0px 1px 4px;
  
   

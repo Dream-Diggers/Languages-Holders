@@ -17,12 +17,16 @@
     
 
 header{
-background-color:rgb(255, 255, 255);
+background-color:rgb(255, 255, 255,0);
 width: 100%;
 /* position: fixed; */
-box-shadow: black 0px 1px 4px;
-padding-bottom: 15px;
-padding-top: 15px;
+/* box-shadow: black 0px 1px 4px; */
+/* padding-bottom: 15px; */
+/* padding-top: 15px; */
+margin-top: -0px;
+}
+.continar{
+  position: relative;
 }
 
 
@@ -173,29 +177,33 @@ padding-top: 15px;
 
 
 nav{
-    margin-left: 450px;
+    margin-left: 500px;
+    position: absolute;
+    margin-top: -525px;
 }
 
 .navli{
     display: inline-flex;
     margin-left: 25px;
     text-decoration: none;
-    color: rgb(59, 34, 34);
-    background-color: #515151;
+    color: rgb(255, 255, 255);
+    /* background-color: #ffffff; */
     font-size: 20px;
     font-family: 'Noto Sans JP', sans-serif;
     margin-top: 10px;
+    padding: 2px;
     
 
 }
 
 .navli :hover{
     
-    padding-bottom: 2px;
+    /* padding-bottom: 2px; */
     color:rgb(255, 255, 255) ;
     background-color: rgb(40, 187, 255);
     border-radius: 5px;
     
+     
     
 }
 
@@ -206,9 +214,11 @@ a{
 
 .logo{
     float: left;
-    margin-left: 200px;
-    font-size: 15px;
-    color :rgb(40, 187, 255)
+    margin-left: 150px;
+    font-size: 25px;
+    color :rgb(40, 187, 255);
+    margin-top: -525px;
+    position: absolute;
 }
 
 
@@ -238,7 +248,7 @@ a{
     float: left;
     padding-top: 75px;
     padding-bottom: 20px;
-    margin-top: -4px;
+    margin-top: -55px;
     width: 100%;
     margin-bottom: 50px;
     color: white;
@@ -269,7 +279,7 @@ hr{
 
 .leftbox img{
     float: right;
-    margin-top: -250px;
+    margin-top: -200px;
     margin-right: 30px;
     width: 280px;
     height: 280px;
@@ -290,11 +300,13 @@ body{
 .main{
   margin-top: 10%;
 }
+
 .main h1{
   font-family: 'Allura', cursive;
   font-size: 52px;
   margin-bottom: 60px;
   text-align: center;
+
 }
 .course1{
   /* display:table; */
