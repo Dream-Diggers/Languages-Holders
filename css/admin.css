@@ -1,0 +1,54 @@
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.admin h1{
+    color: rgb(30, 59, 0);
+    font-family: 'Barlow Condensed', sans-serif;
+    margin-left: 500px;
+
+}
+
+.container h5{
+    color: rgb(30, 59, 0);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+
+.container ol{
+    text-decoration-style: none;
+    
+    
+}
+
+.container ol li{
+    background-color: rgb(30, 59, 0);
+    font-family: 'Barlow Condensed', sans-serif;
+    list-style-type: none;
+    margin-right: 850px;
+    padding: 2px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.chart-container{
+    color: rgb(30, 59, 0);
+    font-family: 'Barlow Condensed', sans-serif;
+    margin-top: 100px;
+
+}
+
+.card-body h2 {
+
+    margin-left: 120px;
+}
+
+
+
+
