@@ -7,7 +7,7 @@
   font-family: 'Montserrat', sans-serif;
 }
 body{
-  background-image: linear-gradient(rgb(211, 203, 238), rgb(156, 212, 243));
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
   padding: 0 10px;
   margin-left: 0px;
   margin-right: 0px;
@@ -21,13 +21,14 @@ body{
   box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
   padding: 30px;
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .wrapper .title{
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 25px;
-  color: rgb(156, 212, 243);
+  color: #772834;
   text-transform: uppercase;
   text-align: center;
 }
@@ -100,7 +101,7 @@ body{
 .wrapper .form .inputfield .input:focus,
 .wrapper .form .inputfield .textarea:focus,
 .wrapper .form .inputfield .custom_select select:focus{
-  border: 1px solid rgb(156, 212, 243);
+  border: 1px solid #7C0516;
 }
 
 .wrapper .form .inputfield p{
@@ -123,7 +124,7 @@ body{
 .wrapper .form .inputfield .check .checkmark{
   width: 15px;
   height: 15px;
-  border: 1px solid #04aa28;
+  border: 1px solid #7C0516;
   display: block;
   position: relative;
 }
@@ -140,7 +141,7 @@ body{
   display: none;
 }
 .wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark{
-  background: #2ca828;
+  background: #7C0516;
 }
 
 .wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before{
@@ -152,7 +153,7 @@ body{
    padding: 8px 10px;
   font-size: 15px; 
   border: 0px;
-  background:  #25bb2d;
+  background:  #7C0516;
   color: #fff;
   cursor: pointer;
   border-radius: 3px;
@@ -160,7 +161,7 @@ body{
 }
 
 .wrapper .form .inputfield .btn:hover{
-  background: #00520e;
+  background: #7C0516;
 }
 
 .wrapper .form .inputfield:last-child{
@@ -180,95 +181,104 @@ body{
   }
 }
 
+
+  
+
 header{
-  background-color:rgb(255, 255, 255);
-  width: 100%;
-  /* position: fixed; */
-  box-shadow: black 0px 1px 4px;
-  padding-bottom: 15px; 
-  padding-top: 15px; 
-  margin-top: -0px;
-  margin-bottom: 2px;
-  }
+background-color:rgb(255, 255, 255);
+width: 100%;
+/* position: fixed; */
+box-shadow: black 0px 1px 4px;
+/* margin-top: -15px;
+margin-bottom: 2px; */
 
-  .searchicon{
-    margin-left: -350px;
-    margin-top: -25px;
-  
-  }
+}
 
-  .searchbox{
-    margin-left: -325px;
-    margin-top: -23px;
+.searchicon{
+margin-left: -350px;
+margin-top: -25px;
+
+}
+
+.smallicon{
+margin-left: 750px;
+margin-top: -30px;
+}
+
+.searchbox{
+margin-left: -325px;
+margin-top: -23px;
+margin-bottom: 10px;
+
+}
+
+nav ul{
+  margin-left: 400px;
   
-  }
-  
-  .smallicon{
-    margin-left: 1100px;
-    margin-top: -25px;
-  }
-  
-  .searchbox{
-    margin-left: -325px;
-    margin-top: -23px;
-  
-  }
-  
-  nav{
-    margin-left: 400px;
-    
-    margin-top: 0px;
-    padding-bottom: 10px;
+  /* margin-top: 0px; */
+ 
 }
 
 .navli{
-    display: inline-flex;
-    margin-left: 25px;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    /* background-color: #ffffff; */
-    font-size: 20px;
-    font-family: 'Noto Sans JP', sans-serif;
-    margin-top: 10px;
-    padding: 2px;
-    
+  display: inline-flex;
+  margin-left: 25px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+ 
+  font-size: 20px;
+  font-family: 'Noto Sans JP', sans-serif;
+  margin-top: 10px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  
 
 }
 
 .navli :hover{
-    
-    /* padding-bottom: 2px; */
-    color:rgb(255, 255, 255) ;
-    background-color: #7a0315;
-    border-radius: 5px;
-    
-     
-    
+  
+  /* padding-bottom: 2px; */
+  color:rgb(255, 255, 255) ;
+  background-color: #7a0315;
+  border-radius: 5px;
+  
+   
+  
 }
 
 a{
-    text-decoration: none;
-    color: rgb(31, 14, 14);
-}
-
-/* .logo{
-    float: left;
-    margin-left: 200px;
-    font-size: 25px;
-    color :rgb(40, 187, 255);
-    margin-top: 0px;
+  text-decoration: none;
+  color: rgb(31, 14, 14);
 }
 
 
-.logo h2{
-    margin-bottom: 0%;
-    font-family: 'Berkshire Swash', cursive;
+footer{
+  background-color: #7C0516;
+  width:100%;
+  top: 0%;
+  overflow: hidden;
+  /* left: 100%; */
+  color: rgb(255, 255, 255);
+  padding-top: 10px;
+  /* margin-left: -5px; */
+  /* margin-bottom: -30px; */
+  margin-top: 400px;
+  /* padding-right: 15px; */
+  font-family: 'Barlow Condensed', sans-serif;
+  text-align: center;
+  border-top: 1px solid rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: bolder;
+  margin-bottom: -8px;
   
+  
+} 
+
+footer .footerlogo{
+  
+  margin-left: 200px;
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 25px;
+  margin-bottom: 10px;
+  margin-right: 200px;
+  margin-top: 10px;
 }
-.logo h6{
-    margin-top: 0%;
-    color: rgb(145, 145, 145);
-    font-family: 'Redressed', cursive;
-    margin-left: 4px;
-    font-size: 10px;
-} */
