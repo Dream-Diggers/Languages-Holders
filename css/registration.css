@@ -181,47 +181,77 @@ body{
 }
 
 header{
-  background-color:rgb(255, 255, 255,.8);
+  background-color:rgb(255, 255, 255);
   width: 100%;
   /* position: fixed; */
   box-shadow: black 0px 1px 4px;
- 
-  
+  padding-bottom: 15px; 
+  padding-top: 15px; 
+  margin-top: -0px;
+  margin-bottom: 2px;
+  }
+
+  .searchicon{
+    margin-left: -350px;
+    margin-top: -25px;
   
   }
 
+  .searchbox{
+    margin-left: -325px;
+    margin-top: -23px;
+  
+  }
+  
+  .smallicon{
+    margin-left: 1100px;
+    margin-top: -25px;
+  }
+  
+  .searchbox{
+    margin-left: -325px;
+    margin-top: -23px;
+  
+  }
+  
   nav{
-    margin-left: 450px;
+    margin-left: 400px;
+    
+    margin-top: 0px;
+    padding-bottom: 10px;
 }
 
 .navli{
     display: inline-flex;
     margin-left: 25px;
     text-decoration: none;
-    color: rgb(145, 145, 145);
+    color: rgb(255, 255, 255);
+    /* background-color: #ffffff; */
     font-size: 20px;
     font-family: 'Noto Sans JP', sans-serif;
     margin-top: 10px;
+    padding: 2px;
     
 
 }
 
 .navli :hover{
     
-    padding-bottom: 2px;
+    /* padding-bottom: 2px; */
     color:rgb(255, 255, 255) ;
-    background-color: rgb(40, 187, 255);
+    background-color: #7a0315;
     border-radius: 5px;
     
+     
     
 }
 
 a{
     text-decoration: none;
-    color: rgb(145, 145, 145);
+    color: rgb(31, 14, 14);
 }
 
-.logo{
+/* .logo{
     float: left;
     margin-left: 200px;
     font-size: 25px;
@@ -241,4 +271,4 @@ a{
     font-family: 'Redressed', cursive;
     margin-left: 4px;
     font-size: 10px;
-}
+} */

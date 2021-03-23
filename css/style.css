@@ -13,19 +13,42 @@ body{
 
     margin-left: 0px;
     margin-right: 0px;
-    margin-top: 0px; */
+    margin-top: 0px; 
  } 
     
 
 header{
-background-color:rgb(255, 255, 255,0);
+background-color:rgb(255, 255, 255);
 width: 100%;
 /* position: fixed; */
-/* box-shadow: black 0px 1px 4px; */
+box-shadow: black 0px 1px 4px;
 /* padding-bottom: 15px; */
 /* padding-top: 15px; */
 margin-top: -0px;
+margin-bottom: 2px;
 }
+
+.searchicon{
+  margin-left: -325px;
+  margin-top: -25px;
+
+}
+
+.smallicon{
+  margin-left: 750px;
+  margin-top: -25px;
+}
+
+.searchbox{
+  margin-left: -300px;
+  margin-top: -23px;
+
+}
+
+
+
+
+
 .continar{
   position: relative;
 }
@@ -178,9 +201,10 @@ margin-top: -0px;
 
 
 nav{
-    margin-left: 500px;
-    position: absolute;
-    margin-top: -525px;
+    margin-left: 350px;
+    
+    margin-top: 0px;
+    padding-bottom: 10px;
 }
 
 .navli{
@@ -190,9 +214,10 @@ nav{
     color: rgb(255, 255, 255);
     /* background-color: #ffffff; */
     font-size: 20px;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
     margin-top: 10px;
-    padding: 2px;
+    padding: 5px;
+    
     
 
 }
@@ -201,8 +226,9 @@ nav{
     
     /* padding-bottom: 2px; */
     color:rgb(255, 255, 255) ;
-    background-color: rgb(40, 187, 255);
+    background-color: #7a0315;
     border-radius: 5px;
+    
     
      
     
@@ -216,28 +242,57 @@ a{
 .logo{
     float: left;
     margin-left: 150px;
-    font-size: 25px;
-    color :rgb(40, 187, 255);
-    margin-top: -525px;
+    font-size: 30px;
+    color : #7a0315;
+    margin-top: 0px;
     position: absolute;
+    
 }
 
 
 .logo h2{
-    margin-bottom: 0%;
+    margin-bottom: 10px;
     font-family: 'Berkshire Swash', cursive;
+    margin-top: 10px;
+    margin-left: 330px;
+    text-shadow: black 1px 1px 1px;
+    
 }
 .logo h6{
     margin-top: 0%;
-    color: rgb(145, 145, 145);
+    color: rgb(255, 255, 255);
     font-family: 'Redressed', cursive;
-    margin-left: 4px;
+    margin-left: 404px;
+    text-shadow: black 1px 1px 1px;
+}
+
+.logo h1{
+  color: rgb(255, 255, 255);
+  margin-top: 210px;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 30px;
+  text-shadow: black 1px 1px 1px;
+  margin-left: 150px;
+}
+
+.logo h3{
+  color: rgb(255, 255, 255);
+  margin-top: 100px;
+  margin-bottom: -180px;
+  font-family: 'Merriweather Sans', sans-serif;
+  text-shadow: black 1px 1px 1px;
+  font-size: 70px;
+  margin-left: -20px;
+  text-decoration: none;
+
 }
 
 
 .langimg{
     width: 100%;
     margin-top: 0px;
+    /* position: relative; */
+    height: ;
     
 }
 
@@ -245,20 +300,26 @@ a{
 
 .leftbox div {
     
-    background-image: linear-gradient(to right,rgb(84, 192, 206), rgb(223, 138, 201));
+    background-image: linear-gradient(to right,#7a0315, #7a0315);
     float: left;
     padding-top: 75px;
     padding-bottom: 20px;
-    margin-top: -55px;
-    width: 100%;
+    margin-top: -100px;
+    margin-left: 100px;
+    margin-right: 100px;
     margin-bottom: 50px;
+    border-radius: 20px;
     color: white;
+    box-shadow: rgb(129, 129, 129) 5px 5px 5px;
 }
 
 .leftbox h2{
     margin-top:-50px;
-    margin-left: 20px;
-    font-family: 'Fjalla One', sans-serif;
+    margin-left: 300px;
+    margin-bottom: 20px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
 
 }
 
@@ -271,19 +332,21 @@ hr{
 }
 
 .leftbox h3{
-    margin-right: 400px;
-    margin-left: 20px;
+    margin-right: 330px;
+    margin-left: 130px;
     font-family: 'Barlow Condensed', sans-serif;
+    
 
     
 }
 
 .leftbox img{
     float: right;
-    margin-top: -200px;
+    margin-top: -250px;
     margin-right: 30px;
     width: 280px;
     height: 280px;
+    
     
 }
 
@@ -295,7 +358,7 @@ hr{
   box-sizing: border-box;
 }
 body{
-  background:#dfd9d9d8;
+  background:#ffffffd8;
   font-family: 'Courier New', Courier, monospace;
 }
 .main{
@@ -303,10 +366,13 @@ body{
 }
 
 .main h1{
-  font-family: 'Allura', cursive;
-  font-size: 52px;
-  margin-bottom: 60px;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 65px;
+  margin-bottom: 30px;
+  margin-top: 50px;
   text-align: center;
+  color: #7a0315;
+  text-shadow: rgb(163, 163, 163) 1px 1px 1px;
 
 }
 .course1{
@@ -561,6 +627,7 @@ body{
   padding: 0 10px 0 10px;  
 }
 
+
 .shop h6:before {
 content: "";
 position: absolute;
@@ -665,8 +732,37 @@ left: 0;
   margin-left: 600px;
 }
 
+.cntCour{
+  width: 100%;
+  background-color:#7C0516 ;
+  padding: 100px;
+  color: white;
+  font-family: 'Merriweather Sans', sans-serif;
+  display: inline-flex;
+  
+}
+
+.cntCour1{
+  font-size: 30px;
+  margin-left: 100px;
+  margin-right: 150px;
+  
+
+}
+.cntCour2{
+  font-size: 30px;
+  margin-right: 150px;
+  
+
+}
+.cntCour3{
+  font-size: 30px;
+  
+
+}
+
 footer{
-    background-color: rgb(84, 192, 206);
+    background-color: #7C0516;
     width:100%;
     top: 0%;
     overflow: hidden;
@@ -675,7 +771,7 @@ footer{
     padding-top: 10px;
     /* margin-left: -5px; */
     /* margin-bottom: -30px; */
-    margin-top: 600px;
+    margin-top: 800px;
     padding-right: 15px;
     font-family: 'Barlow Condensed', sans-serif;
     text-align: center;
