@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/admin.css" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Redressed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+
+        <div class="admin">
+            <h1>Admin Page</h1>
+        </div>
+
+        <section class="sectio">
+
+            <div class="chart-container" style="float: right; margin-right: 200px; height:15vh; width:30vw">
+              <div class="card-body"><h2>Student Chart
+              </h2></div>
+               <canvas id="myChart" width="400" height="400"></canvas>
+          </div>
+          </section> <br>
+
+        
+          <section  class="container" id="container">
+            <h5>Students List</h5>
+            <ol id="stdlist">
+            </ol>
+         
+          </section>
+    </main>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<script src="./js/admin.js"></script>
+</html>
