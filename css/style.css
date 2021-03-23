@@ -54,23 +54,6 @@ margin-bottom: 2px;
 }
 
 
-:root{
-    --dc-: #28a745; /* #28a745 */
-    --rgba-dc: rgba(40, 167, 69, 0.5);
-    --gr-: #515151;
-    --wh-: #fefefe;
-    --sg-: #f7f7f7;
-    --lg-: #b9b9b9;
-    --shadow1-: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-    --shadow2-: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.08) inset;
-    --text-sh-: 2px 5px 2px rgba(33,33,33,0.25);
-    --card-: perspective(1000px) rotateY(-20deg) translateX(-20px);
-  }
-  
-  .fa-globe-asia{
-    color: var(--dc-);
-  }
-  
   
   
   .center{
@@ -83,7 +66,7 @@ margin-bottom: 2px;
     margin: 1em auto 2em;
     font-family: Roboto;
     font-size: 1.2em;
-    color: var(--dc-);
+   
     background: rgba(255,255,255,0.8);
     width: 280px;
     padding: 0.5em 1em;
@@ -91,10 +74,9 @@ margin-bottom: 2px;
   }
   
   .brand{
-    color: var(--gr-);
     font-family: Roboto;
     font-size: 3em;
-    text-shadow: var(--ts-);
+    
     margin: 0 auto;
     padding: 0;
     
@@ -113,12 +95,11 @@ margin-bottom: 2px;
         }
     }
     
+    
   
   .slogan{
-    color: var(--gr-);
     font-family: Roboto;
     font-size: 1.2em;
-    text-shadow: var(--ts-);
     margin: 0 auto;
     padding: 0;
     margin-bottom: 0ch;
@@ -137,15 +118,18 @@ margin-bottom: 2px;
     padding: 0;
     /* font-family: "montserrat",sans-serif; */
   }
-  .testimonials{
-    
+  .testimonials{    
+    font-family: 'Merriweather Sans', sans-serif;
     background: rgba(255,255,255,0.5);
-    color: var(--gr-);
+    
     text-align: center;
     margin: 0 auto 20vh;
   }
+
   .testimonialTitle{
+    font-family: 'Merriweather Sans', sans-serif;
     margin-top: 5ch;
+    font-size: 40px;
   }
   .inner{
     max-width: 1200px;
@@ -158,7 +142,7 @@ margin-bottom: 2px;
   .border{
     width: 160px;
     height: 5px;
-    background: var(--dc-);
+    background: #7C0516;
     margin: 26px auto;
   }
   
@@ -174,11 +158,11 @@ margin-bottom: 2px;
     padding: 15px;
   }
   .testimonial{
-    background: #fff;
+    background: rgba(253, 253, 253, 0.377);
     padding: 30px;
     border-radius: 10px;
-    border: 1px solid var(--rgba-dc);
-    box-shadow: var(--shadow1-);
+    /* border: 1px solid #7C0516; */
+    box-shadow: 0 0 5px 2px rgb(129, 6, 25, 0.4);
   }
   .testimonial img{
     width: 100px;
@@ -187,12 +171,13 @@ margin-bottom: 2px;
     cursor: pointer;
   }
   .name{
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: bold ;
     text-transform: uppercase;
     margin: 20px 0;
   }
   .stars{
-    color: #6ab04c;
+    color: #7C0516;
     margin-bottom: 20px;
     cursor: pointer;
   }
@@ -502,151 +487,13 @@ body{
   /* margin-left: 600px; */
   /* padding: 60px; */
   text-align: center;
-  color: var(--gr-);
+  font-family: 'Merriweather Sans', sans-serif;
   font-size: 30px;
   /* margin-top: 35px; */
 }
-.guide{
-  
-  display: table-cell;
-  border: 2px solid #cbcccc;
-    
-}
-
-.shirt{
-  display: table-cell;
-
-}
-
-.block{
-  display: table-cell;
- 
-}
-
-.shop h6{
-  display: inline-block;
-
-  width: auto;
-  height: 38px;
-  background-color: #6ab070;
-  -webkit-border-radius: 3px 4px 4px 3px;
-  -moz-border-radius: 3px 4px 4px 3px;
-  border-radius: 3px 4px 4px 3px;
-  border-left: 1px solid #6ab070;
-  /* This makes room for the triangle */
-  margin-left: 19px;
-  /* position: relative; */
-  color: white;
-  font-weight: 300;
-  font-size: 22px;
-  line-height: 38px;
-  padding: 0 10px 0 10px;  
-}
 
 
-.shop h6:before {
-content: "";
-position: absolute;
-display: block;
-left: -19px;
-width: 0;
-height: 0;
-border-top: 19px solid transparent;
-border-bottom: 19px solid transparent;
-border-right: 19px solid #6ab070;
-}
 
-/* h6:after {
-content: "";
-background-color: white;
-border-radius: 50%;
-width: 4px;
-height: 4px;
-display: block;
-position: absolute;
-left: -9px;
-top: 17px;
-} */
-
-.addcart{
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  cursor: pointer;
-  display: block;
-  color: #545454;
-  background-color: #fff;
-  background: none;
-  margin: 0 auto;
-  border: 1px solid #6ab070;
-  padding: 10px 40px;
-  outline: none;
-  transition: all 0.2s ease-in-out;
-}
-
-.addcart:hover{
-  background-color: #6ab070;
-  color: #fff;
-}
-
-
-.learningBlocks{
-position: relative;
-display: inline-block;
-}
-
-.learningBlocks .showlearn{
-display: none;
-position: absolute;
-top: 0;
-left: 0;
-
-}
-.learningBlocks:hover .showlearn{
-  display: inline;
-}
-
-
-.guidepics{
-position: relative;
-display: inline-block;
-}
-
-.guidepics .showguide{
-display: none;
-position: absolute;
-top: 0;
-left: 0;
-}
-.guidepics:hover .showguide{
-  display: inline;
-}
-
-.shirtpic {
-position: relative;
-display: inline-block;
-
-}
-.shirtpic .showshirt{
-display: none;
-position: absolute;
-top: 0;
-left: 0;
-}
-.shirtpic:hover .showshirt{
-  display: inline;
-}
-
-.fa-cart-arrow-down{
-  /* font-size: 1em; */
-  color: rgb(175, 31, 6);
-  margin-left: 650px;
-}
-
-.lineaftercart{
-  border-top: 1px solid rgb(126, 120, 120);
-  width: 200px;
-  margin-left: 600px;
-}
 
 .cntCour{
   width: 100%;
