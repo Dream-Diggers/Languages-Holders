@@ -121,7 +121,7 @@ body{
 }
 
 .wrapper .form .inputfield .btn:hover{
-  background: #ffffff;
+  background: #570303;
 }
 
 .wrapper .form .inputfield:last-child{
@@ -174,7 +174,7 @@ margin-bottom: 10px;
 
 nav ul{
   margin-left: 400px;
-  
+  padding-bottom: 15px;
   /* margin-top: 0px; */
  
 }
@@ -188,8 +188,9 @@ nav ul{
   font-size: 20px;
   font-family: 'Noto Sans JP', sans-serif;
   margin-top: 10px;
-  padding-bottom: 15px;
+  padding-bottom: 0px;
   padding-top: 15px;
+  font-weight: bolder;
   
 
 }

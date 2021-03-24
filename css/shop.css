@@ -64,8 +64,6 @@ nav{
   margin-top: 10px;
   padding: 5px;
   
-  
-
 }
 
 .navli :hover{
@@ -485,4 +483,35 @@ body{
     font-size: 1.5em;
     margin-bottom: 15px;
   }
+}
+
+footer{
+  background-color: #7C0516;
+  width:100%;
+  top: 0%;
+  overflow: hidden;
+  left: 100%;
+  color: rgb(255, 255, 255);
+  padding-top: 10px;
+  /* margin-left: -5px; */
+  /* margin-bottom: -30px; */
+  margin-top: 0px;
+  padding-right: 15px;
+  font-family: 'Barlow Condensed', sans-serif;
+  text-align: center;
+  border-top: 1px solid white;
+  font-size: 20px;
+  font-weight: bolder;
+  
+  
+} 
+
+footer .footerlogo{
+  
+  margin-left: 200px;
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 15px;
+  margin-bottom: 0px;
+  margin-right: 200px;
+  margin-top: 0px;
 }
