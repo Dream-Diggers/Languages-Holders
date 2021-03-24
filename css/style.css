@@ -119,8 +119,10 @@ margin-bottom: 2px;
 
   .testimonialTitle{
     font-family: 'Merriweather Sans', sans-serif;
-    margin-top: 5ch;
+    margin-top: 150px;
     font-size: 40px;
+    color:#7C0516 ;
+    letter-spacing: 2px;
   }
   .inner{
     max-width: 1200px;
@@ -522,11 +524,17 @@ hr{
 }
 
 .shopNow{
-  margin-left: 590px;
+  margin-left: 620px;
   text-align: center;
   font-family: 'Merriweather Sans', sans-serif;
-  font-size: 30px;
+  font-size: 50px;
+  font-weight: 900;
   color: #7C0516;
+  text-shadow: black 1px 1px 1px;
+  border-bottom: 3px dotted #7C0516;
+  border-radius: 15%;
+  padding-bottom: 5px;
+
 }
 
 
@@ -540,7 +548,7 @@ footer{
     padding-top: 10px;
     /* margin-left: -5px; */
     /* margin-bottom: -30px; */
-    margin-top: 300px;
+    margin-top: 200px;
     padding-right: 15px;
     font-family: 'Barlow Condensed', sans-serif;
     text-align: center;
