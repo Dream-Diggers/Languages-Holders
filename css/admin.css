@@ -42,7 +42,7 @@ nav{
     margin-left: 400px;
     
     margin-top: 0px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 .navli{
@@ -55,6 +55,7 @@ nav{
     font-family: 'Noto Sans JP', sans-serif;
     margin-top: 10px;
     padding: 2px;
+    font-weight: bolder;
     
 
 }
