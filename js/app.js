@@ -1,17 +1,15 @@
-/////////////////////////>>>>>>>>>>>>>>>>>>>>
 
 //GET THE DATA FROM THE LOCAL STORAGE BY THE KEY.
-let arabicStudents=JSON.parse(localStorage.getItem('ArabicCourse'));
-let dutchStudents=JSON.parse(localStorage.getItem('DutchCourse'));
-let englishStudents=JSON.parse(localStorage.getItem('EnglishCourse'));
-let germanyStudents=JSON.parse(localStorage.getItem('GermanCourse'));
-let italianStudents=JSON.parse(localStorage.getItem('ItalianCourse'));
-let koreanStudents=JSON.parse(localStorage.getItem('KoreanCourse'));
-let turkishStudents=JSON.parse(localStorage.getItem('TurkishCourse'));
+let arabicStudents=JSON.parse(localStorage.getItem('ArabicCourse')) || 0;
+let dutchStudents=JSON.parse(localStorage.getItem('DutchCourse')) || 0;
+let englishStudents=JSON.parse(localStorage.getItem('EnglishCourse'))|| 0;
+let germanyStudents=JSON.parse(localStorage.getItem('GermanCourse'))|| 0;
+let italianStudents=JSON.parse(localStorage.getItem('ItalianCourse'))|| 0;
+let koreanStudents=JSON.parse(localStorage.getItem('KoreanCourse'))|| 0;
+let turkishStudents=JSON.parse(localStorage.getItem('TurkishCourse'))|| 0;
 
 //CALCULATE THE NUMBER OF ALL STUDENTS.
 let totalOfStudents=arabicStudents+dutchStudents+englishStudents+germanyStudents+italianStudents+koreanStudents+turkishStudents;
-console.log(totalOfStudents);
 
 //APPENED THE NUMBER OF TOTAL TO THE HTML MAIN PAGE.
 let numberOfApplicant=document.getElementById('numberOfApplicant');
@@ -72,22 +70,4 @@ let viewNumberOfTurkishStudents=document.createElement('p');
 viewNumberOfTurkishStudents.textContent='Enrolled: '+turkishStudents+'+';
 numberofTurkishCourse.appendChild(viewNumberOfTurkishStudents);
 
-
-
-
-
-// var myIndex = 0;
-// carousel();
-
-// function carousel() {
-//   var i;
-//   var x = document.getElementsByClassName("langimg");
-//   for (i = 0; i < x.length; i++) {
-//     x[i].style.display = "none";  
-//   }
-//   myIndex++;
-//   if (myIndex > x.length) {myIndex = 1}    
-//   x[myIndex-1].style.display = "block";  
-//   setTimeout(carousel, 2000); // Change image every 2 seconds
-// }
 

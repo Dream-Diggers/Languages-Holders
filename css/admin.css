@@ -80,10 +80,11 @@ a{
     color: #7a0315;
     font-family: 'Barlow Condensed', sans-serif;
     margin: 30px 0 0 550px;
-    font-size: 80px;
+    font-size: 100px;
     text-transform: uppercase;
     letter-spacing: 3px;
-    font-weight: 150px;
+    font-weight: 900;
+    text-shadow: black 2px 2px 2px; 
 
 }
 
@@ -108,11 +109,12 @@ a{
     font-family: 'Barlow Condensed', sans-serif;
     list-style-type: none;
     margin-right: 850px;
-    padding: 2px;
+    padding: 10px;
     border-radius: 5px;
     color: rgb(255, 255, 255);
     text-decoration: none;
     margin-bottom: 10px;
+    font-size: 18px;
 }
 
 .chart-container{
@@ -143,7 +145,7 @@ footer{
     padding-top: 10px;
     /* margin-left: -5px; */
     /* margin-bottom: -30px; */
-    margin-top: 400px;
+    margin-top: 20px;
     /* padding-right: 15px; */
     font-family: 'Barlow Condensed', sans-serif;
     text-align: center;
