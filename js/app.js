@@ -26,7 +26,7 @@ numberOfApplicant.appendChild(viewNumberOfApplicant);
 let numberofArabicCourse=document.getElementById('ArabicCourse');
 let viewNumberOfArabicStudens=document.createElement('p');
 
-viewNumberOfArabicStudens.textContent='Enrolled: '+arabicStudents+'+';
+viewNumberOfArabicStudens.textContent='Already Enrolled:'+arabicStudents+'+';
 numberofArabicCourse.appendChild(viewNumberOfArabicStudens);
 
 
@@ -34,42 +34,42 @@ numberofArabicCourse.appendChild(viewNumberOfArabicStudens);
 let numberofEnglishCourse=document.getElementById('englishCourse');
 let viewNumberOfEnglishStudens=document.createElement('p');
 
-viewNumberOfEnglishStudens.textContent='Enrolled: '+englishStudents+'+';
+viewNumberOfEnglishStudens.textContent='Already Enrolled:'+englishStudents+'+';
 numberofEnglishCourse.appendChild(viewNumberOfEnglishStudens);
 
 ///APPENED THE NUMBER OF STUDENTS ENROLL IN DUTCH COURSE.
 let numberofDutchCourse=document.getElementById('dutchCourse');
 let viewNumberOfDutchStudens=document.createElement('p');
 
-viewNumberOfDutchStudens.textContent='Enrolled: '+dutchStudents+'+';
+viewNumberOfDutchStudens.textContent='Already Enrolled:'+dutchStudents+'+';
 numberofDutchCourse.appendChild(viewNumberOfDutchStudens);
 
 /////APPENED THE NUMBER OF STUDENTS ENROLL IN GERMANY COURSE.
 let numberofGermanyCourse=document.getElementById('germanyCourse');
 let viewNumberOfGermanyStudens=document.createElement('p');
 
-viewNumberOfGermanyStudens.textContent='Enrolled: '+germanyStudents+'+';
+viewNumberOfGermanyStudens.textContent='Already Enrolled:'+germanyStudents+'+';
 numberofGermanyCourse.appendChild(viewNumberOfGermanyStudens);
 
 /////APPENED THE NUMBER OF STUDENTS ENROLL IN KOREAN COURSE.
 let numberofItalianCourse=document.getElementById('italianCourse');
 let viewNumberOfItalianStudents=document.createElement('p');
 
-viewNumberOfItalianStudents.textContent='Enrolled: '+italianStudents+'+';
+viewNumberOfItalianStudents.textContent='Already Enrolled:'+italianStudents+'+';
 numberofItalianCourse.appendChild(viewNumberOfItalianStudents);
 
 /////APPENED THE NUMBER OF STUDENTS ENROLL IN TURKISH COURSE.
 let numberofKoreanCourse=document.getElementById('koreanCourse');
 let viewNumberOfKoreanStudents=document.createElement('p');
 
-viewNumberOfKoreanStudents.textContent='Enrolled: '+koreanStudents+'+';
+viewNumberOfKoreanStudents.textContent='Already Enrolled:'+koreanStudents+'+';
 numberofKoreanCourse.appendChild(viewNumberOfKoreanStudents);
 
 /////APPENED THE NUMBER OF STUDENTS ENROLL IN ITALIAN COURSE.
 let numberofTurkishCourse=document.getElementById('turkishCourse');
 let viewNumberOfTurkishStudents=document.createElement('p');
 
-viewNumberOfTurkishStudents.textContent='Enrolled: '+turkishStudents+'+';
+viewNumberOfTurkishStudents.textContent='Already Enrolled:'+turkishStudents+'+';
 numberofTurkishCourse.appendChild(viewNumberOfTurkishStudents);
 
 
