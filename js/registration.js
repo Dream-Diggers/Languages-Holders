@@ -35,7 +35,7 @@ function Courses (FirstName ,LastName , NativeLanguage, Gender ,EmailAddres ,Pho
 Courses.std = []; // global arr
 
 function getstudentinfo(event){ //event handler
-  event.preventDefault();
+  // event.preventDefault();
 
   let FirstName =event.target.FirstName.value;
   let LastName =event.target.LastName.value;
@@ -72,9 +72,10 @@ function getstudentinfo(event){ //event handler
   }else{
     console.log('there is no course with  this name');
   }
-
+  
   let newstd=document.createElement('li');
   newstd.textContent = `Stduent name is ${FirstName} ${LastName}  and student number is ${Courses.std.length}`;
+
 }
 
 function render (){
