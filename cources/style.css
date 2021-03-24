@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+header{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(85, 69, 69);
+}
+main{
+    background-color:#c7ceda;
+    margin:0px auto 0px auto;
+}
+footer{
+    width: 100%;
+    background-color: rgb(85, 69, 69);
+    height: 120px;
+}
+section1{
+    background-color: rgb(255, 255, 255);
+    display: inline-flex;
+}
+.coursename{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.829);
+    width: 800px;
+    margin-top: 0px;
+    margin-left: 180px;
+    padding:40px;
+    margin-bottom: 5px;
+
+}
+.imgsize{
+    width: 800px;
+    height: 550px;
+}
+.imageposition{
+    margin-top: 0px;
+    margin-left: 180px;
+}
+
+
+/* section2 */
+.section2{
+    position: absolute;
+    top: 25%;
+    left: 67%;
+}
+.courseinfo h2{
+    font-size: 20px;
+    font-family: 'Merriweather Sans', sans-serif;
+    margin-top: 10px;
+    font-weight: 300;
+    letter-spacing: 2px;
+
+}
+.pricespan{
+    font-size: 25px;
+    color: rgb(182, 28, 28);
+    margin-left: 10px;
+    font-weight: 400;
+}
+span{
+    color:  rgb(182, 28, 28);
+    font-size: 15px;
+    font-family: 'Merriweather Sans', sans-serif;
+     margin-left: 10px;
+}
+
+.btn{
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 20px; 
+  border: 0px;
+  background:  #940101;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+  margin-top: 25px;
+  
+}
+.btn a{
+    color: #fff;
+    text-decoration: none;
+}
+.btn:hover{
+  background: #420000;
+}
+.coursedata{
+    padding: 30px;
+    padding-left: 0px;
+    border-bottom: 1px solid crimson;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
