@@ -102,12 +102,12 @@ body{
 
 }
 .allimgs{
-
  display: inline-flex;
+ width: 100%;
 }
 .middle{
-  margin-top: 300px;
-  margin-left: 50px;
+  margin-top: 270px;
+  margin-left: 40px;
   transform: translate(-50%,-50%);
 }
 .card{
@@ -138,7 +138,7 @@ body{
   color: #2c3e50;
   text-align: center;
   width: 100%;
-  margin-left: 175px;
+  margin-left: 155px;
   margin-top: 220px;
 }
 .sm{
